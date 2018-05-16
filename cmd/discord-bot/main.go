@@ -9,6 +9,8 @@ import (
 	// Addons
 	_ "github.com/chronojam/discord-bot/pkg/command/ping"
 	_ "github.com/chronojam/discord-bot/pkg/command/ivy"
+	_ "github.com/chronojam/discord-bot/pkg/command/tableflip"
+	_ "github.com/chronojam/discord-bot/pkg/command/play"
 )
 
 func main() {

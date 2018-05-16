@@ -3,6 +3,7 @@ package ping
 import (
 	bot "github.com/chronojam/discord-bot/pkg/discord-bot"
 	"github.com/bwmarrin/discordgo"
+	"fmt"
 )
 
 
@@ -23,6 +24,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 	// If the message is "ping" reply with "Pong!"
+	fmt.Println(args[1])
 	if args[1] == "ping" {
 		s.ChannelMessageSend(m.ChannelID, "Pong!")
 	}

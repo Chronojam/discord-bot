@@ -34,6 +34,7 @@ func New() *DiscordBot {
 // Silly helper function for modules to determine if this is meant for our bot.
 func ParseMessage(m *discordgo.MessageCreate) (bool, []string) {
 	args := strings.Split(m.Content, " ")
+	log.Infof(args[0])
 	if args[0] != ResponsePrefix {
 		return false, args
 	}

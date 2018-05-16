@@ -29,6 +29,4 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 		s.ChannelMessageSend(m.ChannelID, out)
 	}
-
-
 }
